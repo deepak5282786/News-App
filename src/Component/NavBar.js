@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 export class NavBar extends Component {
   render() {
     return (
-      <div className="bg-info mb-2">
+      <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
           <div className="container-fluid">
-            <Link className="navbar-brand">SachTak News </Link>
+            <Link className="navbar-brand" to="/">
+              SachTak News
+            </Link>
             <button
               className="navbar-toggler"
               type="button"

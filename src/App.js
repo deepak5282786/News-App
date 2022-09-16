@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "./Component/NavBar";
 import News from "./Component/News";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default class App extends Component {
   render() {
@@ -11,16 +11,26 @@ export default class App extends Component {
           <NavBar />
           <Switch>
             <Route exact path="/">
-              <News keys="" pageSize={5} country="us" category="general" />
+              <News
+                keys="general"
+                pageSize={5}
+                country="in"
+                category="general"
+              />
             </Route>
             <Route exact path="/business">
-              <News keys="" pageSize={5} country="us" category="business" />
+              <News
+                keys="business"
+                pageSize={5}
+                country="in"
+                category="business"
+              />
             </Route>
             <Route exact path="/entertainment">
               <News
-                keys=""
+                keys="entertainment"
                 pageSize={5}
-                country="us"
+                country="in"
                 category="entertainment"
               />
             </Route>
@@ -28,29 +38,29 @@ export default class App extends Component {
               <News
                 keys="general"
                 pageSize={5}
-                country="us"
+                country="in"
                 category="general"
               />
             </Route>
             <Route exact path="/health">
-              <News keys="health" pageSize={5} country="us" category="health" />
+              <News keys="health" pageSize={5} country="in" category="health" />
             </Route>
             <Route exact path="/science">
               <News
                 keys="science"
                 pageSize={5}
-                country="us"
+                country="in"
                 category="science"
               />
             </Route>
             <Route exact path="/sports">
-              <News keys="sports" pageSize={5} country="us" category="sports" />
+              <News keys="sports" pageSize={5} country="in" category="sports" />
             </Route>
             <Route exact path="/technology">
               <News
                 keys="technology"
                 pageSize={5}
-                country="us"
+                country="in"
                 category="technology"
               />
             </Route>
