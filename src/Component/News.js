@@ -23,12 +23,10 @@ export class News extends Component {
     };
   }
   async componentDidMount() {
-    console.log("cmd");
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=6b169ff99816446ca617e9dadc9bf8d9&page=1&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parseData = await data.json();
-    console.log(parseData);
     this.setState({
       articles: parseData.articles,
       totalResults: parseData.totalResults,
@@ -47,7 +45,6 @@ export class News extends Component {
     this.setState({ loading: true });
     let data = await fetch(url);
     let parseData = await data.json();
-    console.log(parseData);
     this.setState({
       articles: parseData.articles,
       page: this.state.page - 1,
@@ -80,7 +77,6 @@ export class News extends Component {
     }
   };
   render() {
-    console.log("render");
     return (
       <div className="container my-3">
         <h1 className="text-center" style={{ margin: "35px 0px" }}>
@@ -97,6 +93,9 @@ export class News extends Component {
                     description={element.description ? element.description : ""}
                     imageUrl={element.urlToImage}
                     newsUrl={element.url}
+                    date={element.publishedAt}
+                    author={element.author ? element.author : "Unknown"}
+                    source={element.source.name}
                   />
                 </div>
               );
