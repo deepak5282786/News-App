@@ -12,7 +12,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/">
               <News
-                keys="general"
+                key="/general"
                 pageSize={5}
                 country="in"
                 category="general"
@@ -20,7 +20,7 @@ export default class App extends Component {
             </Route>
             <Route exact path="/business">
               <News
-                keys="business"
+                key="/business"
                 pageSize={5}
                 country="in"
                 category="business"
@@ -28,7 +28,7 @@ export default class App extends Component {
             </Route>
             <Route exact path="/entertainment">
               <News
-                keys="entertainment"
+                key="entertainment"
                 pageSize={5}
                 country="in"
                 category="entertainment"
@@ -36,29 +36,29 @@ export default class App extends Component {
             </Route>
             <Route exact path="/general">
               <News
-                keys="general"
+                key="general"
                 pageSize={5}
                 country="in"
                 category="general"
               />
             </Route>
             <Route exact path="/health">
-              <News keys="health" pageSize={5} country="in" category="health" />
+              <News key="health" pageSize={5} country="in" category="health" />
             </Route>
             <Route exact path="/science">
               <News
-                keys="science"
+                key="science"
                 pageSize={5}
                 country="in"
                 category="science"
               />
             </Route>
             <Route exact path="/sports">
-              <News keys="sports" pageSize={5} country="in" category="sports" />
+              <News key="sports" pageSize={5} country="in" category="sports" />
             </Route>
             <Route exact path="/technology">
               <News
-                keys="technology"
+                key="technology"
                 pageSize={5}
                 country="in"
                 category="technology"
