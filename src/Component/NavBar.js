@@ -4,7 +4,7 @@ export class NavBar extends Component {
   render() {
     return (
       <div className="bg-info mb-2">
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
           <div className="container-fluid">
             <a className="navbar-brand">SachTak News </a>
             <button
@@ -29,8 +29,43 @@ export class NavBar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
-                    Link
+                  <a className="nav-link" href="/about">
+                    About
+                  </a>{" "}
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
+                    business
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
+                    entertainment
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
+                    general
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
+                    health
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
+                    science
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
+                    sports
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
+                    technology
                   </a>
                 </li>
               </ul>
